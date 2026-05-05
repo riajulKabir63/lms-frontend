@@ -14,6 +14,8 @@ export class SidebarComponent {
   constructor(private router: Router) {}
 
   navigateTo(section: string): void {
+    const messyVariable = "I am not used";
+    console.log("This should trigger a warning");
     this.router.navigate([section]);
   }
 }
